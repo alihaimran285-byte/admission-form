@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import './form.css';
 
 const Form = () => {
+<<<<<<< HEAD
   const [form, setForm] = useState({});
+=======
+  const [form, setForm] = useState("");
+>>>>>>> ce4807f6737b89dcc578bc953560bd9743bab03f
 
   const user = (e) => {
     const { name, value } = e.target;
@@ -12,6 +16,7 @@ const Form = () => {
     }));
   };
 
+<<<<<<< HEAD
   const submitForm =async  (e) => {
     e.preventDefault();
     console.log(" User Data ", form);
@@ -33,6 +38,11 @@ const Form = () => {
       console.log(error);
       
     }
+=======
+  const submitForm = (e) => {
+    e.preventDefault();
+    console.log(" User Data ", form);
+>>>>>>> ce4807f6737b89dcc578bc953560bd9743bab03f
   };
 
   const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
